@@ -6,19 +6,17 @@
 
 Built on top of mcr.microsoft.com/dotnet/core/runtime:2.1.
 
+The container exposes [nswag as an executable](https://github.com/RicoSuter/NSwag/wiki/CommandLine).
+
 ## Build locally
 
 ```
-cd docker-nswag
-docker build -t countingup/nswag .
+$ cd docker-nswag
+$ docker build -t countingup/nswag .
 ```
 
-## Usage
-
-The container exposes [nswag as an executable](https://github.com/RicoSuter/NSwag/wiki/CommandLine).
-
-By default it will display the version and exit. Run with "help" for instructions.
+## Run (will pull from dockerhub)
 
 ```
-docker run countingup/nswag:latest help
+$ docker run -it countingup/nswag help
 ```
