@@ -1,11 +1,12 @@
-FROM mcr.microsoft.com/dotnet/core/runtime:2.1
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
-	&& apt update \
-&& apt install -y nodejs
+RUN curl -O -L https://github.com/RicoSuter/NSwag/releases/download/NSwag-Build-1067/NSwag.zip
 
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version v1.16.0
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends unzip \
+    && rm -rf /var/lib/apt/lists/* \
+    && unzip -q ./NSwag.zip -d NSwag \
+    && apt-get remove -y --purge unzip
 
-RUN yarn add nswag@13.0.1
-
-RUN yarn run nswag ...
+ENTRYPOINT ["dotnet", "NSwag/NetCore21/dotnet-nswag.dll"]
+CMD ["version"]
