@@ -8,5 +8,7 @@ RUN apt-get update \
     && unzip -q ./NSwag.zip -d NSwag \
     && apt-get remove -y --purge unzip
 
+RUN rm -f NSwag.zip
+
 ENTRYPOINT ["dotnet", "NSwag/NetCore21/dotnet-nswag.dll"]
 CMD ["version"]
