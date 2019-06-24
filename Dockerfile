@@ -4,9 +4,9 @@ RUN curl -O -L https://github.com/RicoSuter/NSwag/releases/download/NSwag-Build-
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends unzip \
-    && rm -rf /var/lib/apt/lists/* \
     && unzip -q ./NSwag.zip -d NSwag \
-    && apt-get remove -y --purge unzip
+    && apt-get remove -y --purge unzip \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN rm -f NSwag.zip
 
