@@ -1,12 +1,10 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1
+FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine3.13-amd64
 
-RUN curl -O -L https://github.com/RicoSuter/NSwag/releases/download/NSwag-Build-1067/NSwag.zip \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends unzip \
+RUN apk add --no-cache --update unzip curl \
+    && curl -O -L https://github.com/RicoSuter/NSwag/releases/download/NSwag-Build-1132/NSwag.zip \
     && unzip -q ./NSwag.zip -d NSwag \
-    && apt-get remove -y --purge unzip \
-    && rm -rf /var/lib/apt/lists/* \
+    && apk del unzip curl \
     && rm -f NSwag.zip
 
-ENTRYPOINT ["dotnet", "NSwag/NetCore21/dotnet-nswag.dll"]
+ENTRYPOINT ["dotnet", "NSwag/Net50/dotnet-nswag.dll"]
 CMD ["version"]
