@@ -1,6 +1,6 @@
 # nswag
 
-[![Docker Automated build](https://img.shields.io/docker/build/countingup/nswag.svg)](https://hub.docker.com/r/countingup/nswag/builds/)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/countingup/nswag.svg)](https://hub.docker.com/r/countingup/nswag/builds/) ![Docker Image Size](https://img.shields.io/docker/image-size/countingup/nswag/latest)
 
 .NET Core + [NSwag](https://github.com/RicoSuter/NSwag).
 
