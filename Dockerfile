@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine3.13-amd64
+FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine3.14
 
 LABEL org.opencontainers.image.source="https://github.com/Countingup/docker-nswag"
 
