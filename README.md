@@ -20,3 +20,7 @@ $ docker build -t countingup/nswag .
 ```
 $ docker run -it countingup/nswag help
 ```
+
+## Changelog
+
+ - 2021-11-06 -- Update to Alpine 3.14 base image
