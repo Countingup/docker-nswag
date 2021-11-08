@@ -4,7 +4,7 @@
 
 .NET Core + [NSwag](https://github.com/RicoSuter/NSwag).
 
-Built on top of mcr.microsoft.com/dotnet/sdk:5.0-alpine3.13-amd64
+Built on top of mcr.microsoft.com/dotnet/sdk:5.0-alpine3.14
 
 The container exposes [nswag as an executable](https://github.com/RicoSuter/NSwag/wiki/CommandLine).
 
@@ -20,3 +20,7 @@ $ docker build -t countingup/nswag .
 ```
 $ docker run -it countingup/nswag help
 ```
+
+## Changelog
+
+ - 2021-11-06 -- Update to Alpine 3.14 base image
