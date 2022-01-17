@@ -23,4 +23,5 @@ $ docker run -it countingup/nswag help
 
 ## Changelog
 
+ - 2022-01-17 -- Rebuild to update base image for security vulns
  - 2021-11-06 -- Update to Alpine 3.14 base image
