@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source="https://github.com/Countingup/docker-nswa
 RUN apk add --no-cache --update unzip curl \
     && curl -O -L https://github.com/RicoSuter/NSwag/releases/download/NSwag-Build-1132/NSwag.zip \
     && unzip -q ./NSwag.zip -d NSwag \
-    && apk del unzip curl \
+    && apk del unzip curl git \
     && rm -f NSwag.zip
 
 ENTRYPOINT ["dotnet", "NSwag/Net50/dotnet-nswag.dll"]
