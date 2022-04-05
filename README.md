@@ -23,6 +23,7 @@ $ docker run -it countingup/nswag help
 
 ## Changelog
 
+ - 2022-04-05 -- Update busybox for security vulns
  - 2022-03-30 -- Rebuild to update base image for security vulns
  - 2022-03-23 -- Rebuild to update base image for security vulns
  - 2022-01-19 -- Remove git from image after building
