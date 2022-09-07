@@ -23,6 +23,7 @@ $ docker run -it countingup/nswag help
 
 ## Changelog
 
+ - 2022-09-07 -- Upgrade zlib for security vulns
  - 2022-07-18 -- Upgrade ncurses-terminfo-base, libssl1.1 and libcrypto1.1 for security vulns
  - 2022-04-05 -- Update busybox for security vulns
  - 2022-03-30 -- Rebuild to update base image for security vulns
