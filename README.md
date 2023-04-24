@@ -4,7 +4,7 @@
 
 .NET Core + [NSwag](https://github.com/RicoSuter/NSwag).
 
-Built on top of mcr.microsoft.com/dotnet/sdk:5.0-alpine3.14
+Built on top of mcr.microsoft.com/dotnet/sdk:7.0-alpine3.17
 
 The container exposes [nswag as an executable](https://github.com/RicoSuter/NSwag/wiki/CommandLine).
 
@@ -22,7 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
-
+ - 2023-04-18 -- Update base image to dotnet/sdk:7-alpine:3.17, NSwag to 13.18.2
  - 2023-02-10 -- Upgrade libssl1.1 for security vulns
  - 2022-09-07 -- Upgrade zlib for security vulns
  - 2022-07-18 -- Upgrade ncurses-terminfo-base, libssl1.1 and libcrypto1.1 for security vulns
