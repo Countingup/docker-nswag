@@ -22,7 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
- - 2023-04-24 -- Use dotnet/sdk:6-alpine3.17
+ - 2023-04-24 -- Downgraded to dotnet/sdk:6-alpine3.17 to support Apple Silicon
  - 2023-04-18 -- Update base image to dotnet/sdk:7-alpine:3.17, NSwag to 13.18.2
  - 2023-02-10 -- Upgrade libssl1.1 for security vulns
  - 2022-09-07 -- Upgrade zlib for security vulns
