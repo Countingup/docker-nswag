@@ -22,6 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
+ - 2023-06-08 -- Just upgrade ncurses-terminfo-base, rather than ncurses
  - 2023-06-07 -- Rebuild to update base image for security vulnerability (ncurses & libssl3)
  - 2023-04-24 -- Downgraded to dotnet/sdk:6-alpine3.17 to support Apple Silicon
  - 2023-04-18 -- Update base image to dotnet/sdk:7-alpine:3.17, NSwag to 13.18.2
