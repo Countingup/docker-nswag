@@ -22,6 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
+ - 2024-01-16 -- Rebuild to update base image for security vulns (libcrypto3)
  - 2023-07-19 -- Rebuild to update base image for security vulns (libcrypto3)
  - 2023-06-08 -- Just upgrade ncurses-terminfo-base, rather than ncurses
  - 2023-06-07 -- Rebuild to update base image for security vulnerability (ncurses & libssl3)
