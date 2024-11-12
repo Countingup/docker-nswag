@@ -22,6 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
+ - 2024-11-12 -- Manually updated `krb5-libs` to fix security vulnerability
  - 2024-06-19 -- Manually updated `busybox` to fix security vulnerability
  - 2024-01-31 -- Rebuild to update base image for security vulns (libcrypto3)
  - 2024-01-16 -- Rebuild to update base image for security vulns (libcrypto3)
