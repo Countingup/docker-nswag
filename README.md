@@ -4,7 +4,7 @@
 
 .NET Core + [NSwag](https://github.com/RicoSuter/NSwag).
 
-Built on top of mcr.microsoft.com/dotnet/sdk:10.0-alpine3.23
+Built on top of mcr.microsoft.com/dotnet/sdk:10.0-alpine3.24
 
 The container exposes [nswag as an executable](https://github.com/RicoSuter/NSwag/wiki/CommandLine).
 
@@ -22,6 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
+ - 2026-08-19 -- Update base image to dotnet/sdk:10.0-alpine3.24
  - 2026-03-09 -- Update base image to dotnet/sdk:10.0-alpine3.23, NSwag to v14.6.3
  - 2024-11-12 -- Manually updated `krb5-libs` to fix security vulnerability
  - 2024-06-19 -- Manually updated `busybox` to fix security vulnerability
