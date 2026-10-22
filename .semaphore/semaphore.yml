@@ -18,6 +18,6 @@ blocks:
         - name: Build and deploy image
           commands:
             - checkout
-            - docker build -t countingup/nswag .
+            - docker build --pull -t countingup/nswag .
             - echo "${DOCKERHUB_PASSWORD}" | docker login --username "${DOCKERHUB_USERNAME}" --password-stdin
             - docker push countingup/nswag

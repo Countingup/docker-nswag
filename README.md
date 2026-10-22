@@ -22,6 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
+ - 2026-10-22 -- Upgrade `ca-certificates` for eMudhra intermediate CA compromise
  - 2026-08-19 -- Update base image to dotnet/sdk:10.0-alpine3.24
  - 2026-03-09 -- Update base image to dotnet/sdk:10.0-alpine3.23, NSwag to v14.6.3
  - 2024-11-12 -- Manually updated `krb5-libs` to fix security vulnerability
