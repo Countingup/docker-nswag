@@ -4,7 +4,7 @@
 
 .NET Core + [NSwag](https://github.com/RicoSuter/NSwag).
 
-Built on top of mcr.microsoft.com/dotnet/sdk:10.0-alpine3.24
+Built on top of mcr.microsoft.com/dotnet/aspnet:10.0-alpine3.24
 
 The container exposes [nswag as an executable](https://github.com/RicoSuter/NSwag/wiki/CommandLine).
 
@@ -22,6 +22,7 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
+ - 2026-11-10 -- Switch base image from dotnet/sdk to dotnet/aspnet (~1.08GB -> ~190MB) and `apk upgrade` all packages (fixes zlib CVE-2026-4738)
  - 2026-10-22 -- Upgrade `ca-certificates` for eMudhra intermediate CA compromise
  - 2026-08-19 -- Update base image to dotnet/sdk:10.0-alpine3.24
  - 2026-03-09 -- Update base image to dotnet/sdk:10.0-alpine3.23, NSwag to v14.6.3
