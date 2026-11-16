@@ -22,7 +22,6 @@ $ docker run -it countingup/nswag help
 ```
 
 ## Changelog
- - 2026-11-16 -- Rebuild to update base image for security vulns (Microsoft.AspNetCore.App.Runtime.linux-musl-x64)
  - 2026-11-10 -- Switch base image from dotnet/sdk to dotnet/aspnet (~1.08GB -> ~190MB) and `apk upgrade` all packages (fixes zlib CVE-2026-4738)
  - 2026-10-22 -- Upgrade `ca-certificates` for eMudhra intermediate CA compromise
  - 2026-08-19 -- Update base image to dotnet/sdk:10.0-alpine3.24
